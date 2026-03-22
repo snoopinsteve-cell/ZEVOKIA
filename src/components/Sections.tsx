@@ -4,9 +4,13 @@ import { Users, Trophy, Play, Mail, Twitter, Instagram, Github, ChevronRight, Ta
 export const Navbar = () => (
   <nav className="fixed top-0 left-0 w-full z-50 glass border-b border-white/5">
     <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-      <div className="flex items-center gap-2">
-        <div className="w-10 h-10 bg-brand-accent rounded-lg flex items-center justify-center font-display font-bold text-xl rotate-3">Z</div>
-        <span className="font-display font-bold text-2xl tracking-tighter uppercase">Zevokia</span>
+      <div className="flex items-center gap-3">
+        <div className="relative w-12 h-12 flex items-center justify-center">
+          <div className="absolute inset-0 border-2 border-brand-accent rounded-full" />
+          <div className="absolute inset-1 border border-purple-600 rounded-full" />
+          <span className="font-display font-black text-lg tracking-tighter bg-clip-text text-transparent bg-gradient-to-b from-brand-accent to-purple-600">ZEV</span>
+        </div>
+        <span className="font-display font-bold text-2xl tracking-tighter uppercase hidden sm:block">Zevokia</span>
       </div>
       <div className="hidden md:flex items-center gap-8 text-sm font-medium uppercase tracking-widest text-white/60">
         <a href="#about" className="hover:text-brand-accent transition-colors">About</a>
@@ -36,6 +40,13 @@ export const Hero = () => (
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
+        <div className="flex justify-center mb-10">
+          <div className="relative w-32 h-32 flex items-center justify-center animate-float">
+            <div className="absolute inset-0 border-4 border-brand-accent rounded-full neon-glow" />
+            <div className="absolute inset-2 border-2 border-brand-purple rounded-full" />
+            <span className="font-display font-black text-4xl tracking-tighter bg-clip-text text-transparent bg-gradient-to-b from-brand-accent to-brand-purple">ZEV</span>
+          </div>
+        </div>
         <span className="inline-block px-4 py-1 rounded-full border border-brand-accent/30 bg-brand-accent/10 text-brand-accent text-[10px] font-bold uppercase tracking-[0.3em] mb-6">
           Competitive Counter-Strike
         </span>
@@ -305,8 +316,12 @@ export const Footer = () => (
   <footer className="py-20 border-t border-white/5">
     <div className="max-w-7xl mx-auto px-6">
       <div className="flex flex-col md:flex-row justify-between items-center gap-10">
-        <div className="flex items-center gap-2">
-          <div className="w-8 h-8 bg-brand-accent rounded flex items-center justify-center font-display font-bold text-lg">Z</div>
+        <div className="flex items-center gap-3">
+          <div className="relative w-10 h-10 flex items-center justify-center">
+            <div className="absolute inset-0 border-2 border-brand-accent rounded-full" />
+            <div className="absolute inset-1 border border-brand-purple rounded-full" />
+            <span className="font-display font-black text-[10px] tracking-tighter bg-clip-text text-transparent bg-gradient-to-b from-brand-accent to-brand-purple">ZEV</span>
+          </div>
           <span className="font-display font-bold text-xl uppercase tracking-tighter">Zevokia</span>
         </div>
         <div className="text-white/20 text-xs uppercase tracking-widest">

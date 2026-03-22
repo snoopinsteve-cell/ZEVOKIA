@@ -8,6 +8,7 @@
   --color-brand-black: #050505;
   --color-brand-grey: #121212;
   --color-brand-accent: #FF0000;
+  --color-brand-purple: #9333ea;
   --color-brand-white: #FFFFFF;
 }
 
@@ -30,7 +31,7 @@
 }
 
 .text-gradient {
-  @apply bg-clip-text text-transparent bg-gradient-to-r from-brand-accent to-white;
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-brand-accent via-brand-purple to-white;
 }
 
 @keyframes float {
