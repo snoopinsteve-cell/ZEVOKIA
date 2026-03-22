@@ -160,14 +160,16 @@ export const Roster = () => (
             transition={{ delay: i * 0.1 }}
             className="group relative"
           >
-            <div className="aspect-[3/4] bg-brand-grey rounded-xl overflow-hidden border border-white/5 transition-all group-hover:border-brand-accent/50 group-hover:translate-y-[-8px]">
+            <div className="aspect-[3/4] bg-brand-grey rounded-xl overflow-hidden border border-white/5 transition-all group-hover:border-brand-accent/50 group-hover:translate-y-[-8px] flex items-center justify-center">
               <div className="absolute inset-0 bg-gradient-to-t from-brand-black via-transparent to-transparent z-10" />
-              <img 
-                src={`https://picsum.photos/seed/${player.ign}/600/800`} 
-                alt={player.ign} 
-                className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110"
-                referrerPolicy="no-referrer"
-              />
+              
+              {/* Team Logo Placeholder */}
+              <div className="relative w-24 h-24 flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
+                <div className="absolute inset-0 border-2 border-brand-accent rounded-full opacity-20 group-hover:opacity-100 transition-opacity" />
+                <div className="absolute inset-2 border border-purple-600 rounded-full opacity-10 group-hover:opacity-50 transition-opacity" />
+                <span className="font-display font-black text-3xl tracking-tighter bg-clip-text text-transparent bg-gradient-to-b from-brand-accent to-purple-600">ZEV</span>
+              </div>
+
               <div className="absolute bottom-0 left-0 w-full p-6 z-20">
                 <span className="text-xs font-bold text-brand-accent uppercase tracking-widest mb-1 block">{player.role}</span>
                 <h3 className="text-2xl font-display font-bold uppercase mb-2">{player.ign}</h3>
