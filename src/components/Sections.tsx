@@ -270,26 +270,6 @@ export const Stats = () => (
   </section>
 );
 
-export const Sponsors = () => (
-  <section className="py-32 overflow-hidden">
-    <div className="max-w-7xl mx-auto px-6 text-center">
-      <h3 className="text-xs font-bold uppercase tracking-[0.5em] text-white/20 mb-16">Supported By</h3>
-      <div className="flex flex-wrap items-center justify-center gap-12 md:gap-24 opacity-30 grayscale hover:grayscale-0 transition-all">
-        <div className="text-2xl font-display font-bold italic tracking-tighter">RAZER</div>
-        <div className="text-2xl font-display font-bold tracking-widest">LOGITECH</div>
-        <div className="text-2xl font-display font-bold uppercase">SteelSeries</div>
-        <div className="text-2xl font-display font-bold tracking-tighter">NVIDIA</div>
-        <div className="text-2xl font-display font-bold italic">INTEL</div>
-      </div>
-      <div className="mt-20">
-        <button className="text-xs font-bold uppercase tracking-widest text-brand-accent hover:text-white transition-colors border-b border-brand-accent/30 pb-2">
-          Become a Partner
-        </button>
-      </div>
-    </div>
-  </section>
-);
-
 export const CTA = () => (
   <section className="py-32 relative overflow-hidden">
     <div className="absolute inset-0 bg-brand-accent/5" />

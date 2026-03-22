@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { Navbar, Hero, About, Roster, Media, Stats, Sponsors, CTA, Footer } from "./components/Sections";
+import { Navbar, Hero, About, Roster, Media, Stats, CTA, Footer } from "./components/Sections";
 import { motion, useScroll, useSpring } from "motion/react";
 
 export default function App() {
@@ -37,7 +37,6 @@ export default function App() {
           <About />
           <Roster />
           <Media />
-          <Sponsors />
           <CTA />
         </motion.div>
       </main>
